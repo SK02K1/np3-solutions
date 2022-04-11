@@ -69,7 +69,7 @@ export const QuesTwo = () => {
         {products.map((productInfo) => {
           const { id, item, price, quantity } = productInfo;
           return (
-            <div key={id}>
+            <div className="list-item" key={id}>
               <span>
                 {item}({price}$)
               </span>{" "}

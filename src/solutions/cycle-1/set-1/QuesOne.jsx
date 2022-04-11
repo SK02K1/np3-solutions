@@ -82,14 +82,7 @@ export const QuesOne = () => {
         {filteredProducts.map((productInfo) => {
           const { id, item, price } = productInfo;
           return (
-            <div
-              key={id}
-              style={{
-                backgroundColor: "palevioletred",
-                margin: "1rem 0",
-                padding: ".5rem"
-              }}
-            >
+            <div className="list-item" key={id}>
               <span>{item}</span> {" - "}
               <span>{price}$</span>
             </div>
