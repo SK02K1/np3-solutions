@@ -1,7 +1,7 @@
 import "./styles.css";
 import { Route, Routes } from "react-router-dom";
 import { useTheme } from "./contexts";
-import { Home } from "./pages";
+import { Home, SingleCycle } from "./pages";
 import { Navbar } from "./components";
 
 export default function App() {
@@ -11,6 +11,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cycles/:cycleID" element={<SingleCycle />} />
       </Routes>
     </div>
   );

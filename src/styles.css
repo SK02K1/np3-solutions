@@ -46,6 +46,13 @@
   cursor: pointer;
 }
 
+.solution {
+  background-color: lightseagreen;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
 @media screen and (min-width: 800px) {
   .App {
     width: 70%;
