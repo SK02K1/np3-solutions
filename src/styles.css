@@ -4,6 +4,7 @@
   min-height: 100vh;
   border-radius: 5px;
   margin: 0 auto;
+  transition: all 300ms ease;
 }
 
 .grid-container {
@@ -40,7 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightcoral;
+  background-color: lightseagreen;
   border-radius: 5px;
   cursor: pointer;
 }
