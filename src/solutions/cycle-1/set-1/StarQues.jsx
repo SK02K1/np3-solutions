@@ -33,6 +33,11 @@ export const data = [
   }
 ];
 
+const getTotalPrice = (products) =>
+  products.reduce((totalPrice, { price, quantity }) => {
+    return totalPrice + price * quantity;
+  }, 0);
+
 export const StarQues = () => {
   const [products, setProducts] = useState(data);
 
@@ -55,6 +60,9 @@ export const StarQues = () => {
       })
     );
   };
+
+  const totalPrice = getTotalPrice(products);
+
   return (
     <div className="solution">
       <h2>problem: C1S1QS</h2>
@@ -83,6 +91,7 @@ export const StarQues = () => {
           );
         })}
       </div>
+      <h4>Total: {totalPrice}</h4>
     </div>
   );
 };
