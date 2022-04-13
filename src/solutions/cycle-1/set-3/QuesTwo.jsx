@@ -49,7 +49,7 @@ export const QuesTwo = () => {
 
   return (
     <div className="solution">
-      <h2>C1S3Q2</h2>
+      <h2>problem: C1S3Q2</h2>
       <p>
         Ques: Add a new object to the list of cars and display them on the
         screen
